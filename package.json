@@ -8,8 +8,8 @@
     "node": "18"
   },
   "scripts": {
-    "dev": "nodemon ./src/index.js",
-    "vercel-build": "node src database"
+    "start": "node src/index.js",
+    "dev": "nodemon ./src/index.js"
   },
   "author": "",
   "license": "ISC",
