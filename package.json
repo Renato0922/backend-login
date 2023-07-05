@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": "18"
+  },
   "scripts": {
     "dev": "nodemon ./src/index.js",
-    "vercel-build": "npx prisma migrate deploy"
+    "vercel-build": "node src database"
   },
   "author": "",
   "license": "ISC",

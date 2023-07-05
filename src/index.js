@@ -31,6 +31,7 @@ app.use((req, res, next) => {
   next()
 })
 
+const port = process.env.PORT || 3001
 app.use(express.json())
 
 app.get('/api/ping', (request, response) => {
@@ -55,6 +56,6 @@ app.get('/api/login', listActivities)
 app.post('/api/usuarios', cadastroUsuario)
 app.get('/api/usuarios', listUsuarios)
 
-app.listen(8000, () => {
+app.listen(port, () => {
   console.log('Servidor rodando na porta 8000...')
 })
